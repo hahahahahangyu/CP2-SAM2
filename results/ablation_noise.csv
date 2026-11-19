@@ -1,0 +1,5 @@
+method,condition,mean_iou,n
+sam,severe+noise,0.521,206
+sam,severe_no_noise,0.652,206
+robustsam,severe+noise,0.309,206
+robustsam,severe_no_noise,0.352,206
