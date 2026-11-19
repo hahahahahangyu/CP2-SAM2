@@ -1,0 +1,11 @@
+# Install torch/torchvision first with the right CUDA wheel (see cloud/setup_gpu.sh);
+# on the Mac, plain `pip install torch torchvision` gives MPS support.
+ultralytics>=8.3,<8.4   # pin to the exact version the daylight baseline used (`pip show ultralytics` on the Mac)
+numpy<2
+opencv-python-headless
+pillow
+scipy
+pandas
+tabulate
+matplotlib
+tqdm

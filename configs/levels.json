@@ -1,0 +1,38 @@
+{
+  "_doc": "Lv, Li & Lu (arXiv 1908.00682) Eq. 1 per level, fixed (no sampling); noise = CBDNet heteroscedastic Gaussian (sigma_s, sigma_c = midpoints of CBDNet's U[0,0.16], U[0,0.06]). Calibrated 2026-11-19 on the 186 Pothole Mix test images (daylight mean luma 0.561) against the NPD dark subset (luma<0.35): mild gamma fitted to NPD p75 0.210 (got 0.210); medium gamma fitted to NPD median 0.146 (got 0.146; jade's proposed 3.0 gives 0.143); severe kept at gamma 5.0, the top of the Lv et al. range, giving 0.087 (~NPD p27) because the noise floor stops it reaching p25 0.081 inside that range.",
+  "levels": {
+    "mild": {
+      "alpha": 0.95,
+      "beta": 0.9,
+      "gamma": 2.41
+    },
+    "medium": {
+      "alpha": 0.95,
+      "beta": 0.75,
+      "gamma": 2.93
+    },
+    "severe": {
+      "alpha": 0.95,
+      "beta": 0.5,
+      "gamma": 5.0
+    }
+  },
+  "noise": {
+    "sigma_s": 0.08,
+    "sigma_c": 0.03
+  },
+  "seed": 0,
+  "calibration": {
+    "potholemix_daylight_mean_luma": 0.561,
+    "mean_luma": {
+      "mild": 0.21,
+      "medium": 0.146,
+      "severe": 0.087
+    },
+    "npd_dark_targets": {
+      "p75": 0.21,
+      "median": 0.146,
+      "p25": 0.081
+    }
+  }
+}

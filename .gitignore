@@ -1,0 +1,29 @@
+# datasets and data copies (licences: Pothole Mix CC BY-NC 3.0, NPD research-only)
+data/raw/
+data/dark/
+datasets/
+*.zip
+*.tgz
+*.tar.gz
+
+# model weights and third-party code (fetched by cloud/setup_gpu.sh)
+weights/
+third_party/
+*.pt
+*.pth
+*.onnx
+
+# run outputs (keep result CSVs and tables; drop images and logs)
+runs/
+results/overlays/
+results/**/*.jpg
+results/**/*.png
+*.log
+
+# python / editors
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
